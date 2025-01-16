@@ -1,0 +1,663 @@
+@charset "UTF-8";
+@font-face{
+font-family: 'fontelogo';
+src: url("../_fonts/bubblegum-sans-regular.otf")
+}
+body{
+    background-color: black;
+    color:rgb(76, 43, 33);
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+padding-top: 50px;
+font-size: 40px;}
+
+  h2{
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      top: 100px;
+  }  
+    .pesquisa {
+        width: 0;
+        height: 0;
+        position: relative;
+        top:80px;
+        left: 75%;
+    }
+    #texto {
+        width: 15,625%;
+        height: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        float: right;
+    }
+    .btn{
+        width: 25px;
+        height: 25px;
+      cursor: pointer; 
+      
+    }
+    #texto:focus{
+border: solid 1px rgb(76, 43, 33);
+    }
+
+    div#interface{
+        width: 99%;
+        height: 100%;
+        background-color: white;
+        margin: 0px auto 10px auto;
+        box-shadow: 0px 0px 10px black;
+        padding: 5px;
+    
+    }
+
+    p{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
+     text-align:justify;
+     text-indent:50px;
+    
+        }
+
+
+   header#cabecalho {
+       border-bottom: 1px white solid;
+       width: 100%;
+       height:150px ;
+       background: url("../imagens/cap.png") no-repeat 0px; 
+       background-size: 100% 100%;
+}
+.logo{
+    width:auto;
+    height: 70%;
+    top: -50px;
+    left: 40%;
+    position: relative;
+}
+   
+figure.usu img {
+    width: auto;
+    height: 60px;
+ position: absolute;
+ left: 10px;
+}
+figure.usu figcaption{
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    padding: 2px;
+    top:10px;     
+    color:rgb(76, 43, 33);
+    text-align: center;
+    top:40px;}
+ figure.usu {
+        position: absolute;
+        border: 1px;
+        width: auto;
+        height:120px ;
+        border-color:white;
+        border-style: solid;
+        left: 85%;
+        top: 20px;
+    }
+   
+            .menu {
+                width: 100%;
+                height: 50px;
+                background-color:rgb(76, 43, 33);
+                font-family: 'Arial';
+                position: relative;
+                top: 120px;
+                z-index: 1;
+               }
+              
+               .menu ul{
+               list-style:none ;
+               position: relative;
+               left: 5%;
+               }
+
+               .menu ul li{
+                   width:15%;
+                   height: 100%;
+                   float: left;
+                 
+               
+               }
+               .menu a{
+                   padding: 5%;
+                   display: block;
+                   text-decoration: none;
+                   text-align: center;
+                   background-color:rgb(76, 43, 33);
+                   color: white;
+                   font-size: 93%;
+               }
+
+               .menu ul ul{
+                   position: absolute;
+                   visibility: hidden;
+                   width:100%;
+               }
+
+               .menu ul li:hover ul{
+                   visibility: visible;
+                   left: 30%;
+               }
+               .menu a:hover{
+                   background-color:rgb(180, 1, 7);
+                   border: 1px solid white;
+               }
+
+               .menu ul ul li{
+                   float: none;
+               }
+               .menu ul li ul a{
+                background-color:rgb(180, 1, 7);
+               }
+               .menu ul ul li:hover a{
+                   background-color:rgb(76, 43, 33) ;
+               }
+               label[for="bt_menu"] {
+                padding: 5px;
+                background-color: #222;
+                color: #fff;
+                font-family: 'Arial';
+                text-align: center;
+                font-size: 30px;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                display: none;
+               }
+              
+               #bt_menu {
+                display: none;
+               }
+              
+              
+              
+              
+               /* config ultimos produtos*/
+               .produ{
+                   width: 100%;
+                   height: 350px;
+                   background-color:rgb(251, 195, 194);
+              
+               }
+               .produ h1{
+                   font-size: 30px;
+                   font-family: 'Times New Roman', Times, serif;
+                   text-align: left;
+                   padding: 0;
+               }
+               figure.neu{
+                position: relative;
+                border: 4px;
+                width:200px;
+                height:200px ;
+                border-color:rgb(180, 1, 7);
+                border-style: solid;
+                float: left;
+                background-color: white;
+            }
+            
+                figure.neu img {
+                    width: 95%;
+                    height: 50%;
+                padding: 5px;}
+                    figure.neu figcaption{
+                        position: absolute;
+                        width: 200px;
+                        height: 100px;
+                        padding: 2px;
+                        top:100px;     
+                        color:black;
+                        text-align: center;
+                        
+                    }
+                    figure.neu figcaption h1{
+                        font-size: 20px;
+                        text-align: center;
+                
+                    }
+        
+                    figure.neu figcaption h3{
+                        font-size: 15px;
+                        
+                    }
+                    .chuva{
+                        position: absolute;
+        
+
+                    }
+/*animação imgs ultimos produtos adicionados*/
+
+.chuva {
+    opacity: 0;
+    animation-name: anima;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anima{
+25%{
+    opacity: 1;
+    transform: scale(1,1,1,1);
+
+}
+ 50%{opacity: 0;
+
+ }
+
+}
+
+.chuva:nth-child(1){
+
+}
+
+.chuva:nth-child(2){
+    animation-delay: 4s;
+}
+
+
+                   /* animação parte de cima do site*/
+.galeria{
+    margin: auto;
+    width: 100%;
+    height: 470px;
+ position: relative;
+ overflow: hidden;
+ z-index: 0;
+}
+
+.foto{
+    position: absolute;
+    top:20px;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+25%{
+    opacity: 1;
+    transform: scale(1,1,1,1);
+
+}
+ 50%{opacity: 0;
+
+ }
+
+}
+
+.foto:nth-child(1){
+
+}
+
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4){
+    animation-delay: 15s;
+}
+
+
+
+
+
+
+.kites{
+    width: 100%;
+    height: 600px;
+    border: solid 1px none ;
+}
+.kites h1{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+
+}
+
+/* kits 1*/
+#container{
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    padding: 50px;
+    position: relative;
+    
+
+}
+.principal{
+    width: 400px;
+    height: 300px;
+    border: solid 1px;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    width: 400%;
+    transition: all .8s;
+}
+
+label img{
+    width: 100px;
+    cursor: pointer;
+    float: left;
+    opacity: 0.3;
+    transition: all 4s;
+
+}
+
+#foto2:checked ~ .principal .slide{
+    margin-left: -100%;
+}
+#foto3:checked ~ .principal .slide{
+    margin-left: -200%;
+}
+#foto4:checked ~ .principal .slide{
+    margin-left: -300%;
+}
+input[name="grupo"]{
+    display: none;
+}
+input[name="grupo"]:checked + label img{
+    opacity: .9;
+}
+.ui{
+    width: 400px;
+    height: 300px;
+}
+/*kits2*/
+#containe{
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    padding: 50px;
+    position: relative;
+    top: -400px;
+    left: 50%;
+
+   
+}
+.principale{
+    width: 400px;
+    height: 300px;
+    border: solid 1px;
+    overflow: hidden;
+  
+   
+   
+}
+.slidi{
+    display: flex;
+    width: 400%;
+    transition: all .8s;
+}
+
+label img{
+    width: 100px;
+    cursor: pointer;
+    float: left;
+    opacity: 0.3;
+    transition: all 4s;
+
+}
+
+#foto6:checked ~ .principale .slidi{
+    margin-left: -100%;
+}
+#foto7:checked ~ .principale .slidi{
+    margin-left: -200%;
+}
+#foto8:checked ~ .principale .slidi{
+    margin-left: -300%;
+}
+input[name="grupa"]{
+    display: none;
+}
+input[name="grupa"]:checked + label img{
+    opacity: .9;
+}
+.uia{
+    width: 400px;
+    height: 300px;
+}
+
+
+/* redes socias*/
+.redes{
+    margin:50px auto;
+    width: 100%;
+    height: 300px;
+    background-color:rgb(251, 195, 194);
+
+}
+.redes h1{
+text-align: center;
+    font-size: 40px;
+
+}
+.arrumar{
+    padding-left: 30%;
+}
+.socias{
+    width:150px;
+    height:150px;
+    float:left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+   
+}
+
+.socias:hover{
+    cursor:pointer;
+    box-shadow: 4px 30px 16px 0px darkgray;
+}
+.redas{
+    margin:0px auto;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+#footer{
+    text-align: center;
+}
+
+@media (max-width:1000px){
+    .logo{
+        width: auto;
+    }
+    .pesquisa{
+        left: 81%;
+    }
+}
+@media (max-width: 800px) {
+    label[for="bt_menu"] {
+     display: block;
+     width: 50px;
+     height: 50px;
+   text-align: center;
+     position: relative;
+    top: 116px;
+     z-index: 11;
+    background-color: rgb(76, 43, 33);    }
+  
+    #bt_menu:checked ~ .menu {
+     margin-left: 0;
+    }
+  
+    .menu {
+        width: 50%;
+        height: 30px;
+        position: relative;
+        top: 40%;
+     margin-left: -100%;
+     transition: all .4s;
+    }
+  
+    .menu ul li {
+     width: 100%;
+     float: none;
+    }
+    .menu ul ul {
+     position: static;
+     overflow: hidden;
+     max-height: 0;
+     transition: all .8s;
+    }
+    .menu ul li:hover ul {
+     height: auto;
+     max-height: 200px;
+
+    }
+    .galeria{
+     z-index: 0;
+     top: -50px;
+    }
+    .logo{
+        top: -90px;
+        left: 35%;
+        width: auto;
+        height:60% ;
+    }
+    #texto {
+        width: 130px;
+        height: 25px;
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .pesquisa {
+        width: 0;
+        height: 0;
+        position: relative;
+        top:70px;
+        left: 63%;
+    }
+    figure.usu {
+        position: absolute;
+        border: 1px;
+        width: 60px;
+        height:60px ;
+        border-color:white;
+        border-style: solid;
+        left: 82%;
+        top: 0px;
+    }
+   }
+
+   @media (max-width:700px){
+       .logo{ 
+           width: auto;
+       }
+   }
+@media (max-width:600px){
+    /*parte do cabeçalho*/
+    header#cabecalho {
+        border-bottom: 1px white solid;
+        width: 100%;
+        height: 100px;
+        background: url("../imagens/certin.png") no-repeat 0px; 
+        background-position: center;
+        background-size: 100%;}
+    .pesquisa {
+        width: 0;
+        height: 0;
+        position: relative;
+        top:70px;
+        left: 60%;
+    }
+    
+    #texto {
+        width: 120px;
+        height: 18px;
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .btn{
+        width: 18px;
+        height: 18px;
+        padding: 1px;
+        cursor: pointer;}  
+    .logo{
+        display: none;
+    } 
+           
+figure.usu img {
+    width: 50px;
+    height: 30px;
+ position: absolute;
+}
+figure.usu figcaption{
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    padding: 1px;     
+    color:rgb(76, 43, 33);
+    text-align: center;
+    top:20px;
+left: 10px;}
+    figure.usu {
+        position: absolute;
+        border: 1px;
+        width: 60px;
+        height:60px ;
+        border-color:white;
+        border-style: solid;
+        left: 78%;
+        top: -5px;
+    }
+    figure.usu h3{
+        font-size: 15px;
+    }
+
+    label[for="bt_menu"] {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 90px;
+        z-index: 11;
+       background-color: rgb(76, 43, 33);    }
+     
+       .galeria{
+        z-index: 0;
+        top: -20px;
+       }
+}
+
+@media (max-width:500px){
+.galeria{
+    top: -25px;
+}
+label[for="bt_menu"] {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 95px;
+    z-index: 11;
+   background-color: rgb(76, 43, 33);    }
+
+   figure.usu {
+       width: auto;
+   }
+
+}
+    
